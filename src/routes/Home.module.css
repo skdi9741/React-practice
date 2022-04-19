@@ -26,8 +26,9 @@
     right: 0;
     z-index: 10;
     transition: .4s ease;
-    background: rgb(221,177,65);
+    /* background: rgb(221,177,65);
     background: linear-gradient(90deg, rgba(221,177,65,1) 0%, rgba(226,123,71,1) 49%, rgba(249,119,167,1) 100%);
+    */
 }
 
 .nav h1{
