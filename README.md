@@ -1,10 +1,7 @@
-# Getting Started with Create React App
+# Study React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+ReactJS로 Movie web service 제작
+Github training
 
 ### `npm start`
 
