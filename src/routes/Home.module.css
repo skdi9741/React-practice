@@ -1,0 +1,59 @@
+.container {
+    height: 100%;
+    justify-content: center;
+    position:relative;
+}
+  
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+.sub_container{
+    display: grid;
+}
+.nav {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: .4s ease;
+    background: rgb(221,177,65);
+    background: linear-gradient(90deg, rgba(221,177,65,1) 0%, rgba(226,123,71,1) 49%, rgba(249,119,167,1) 100%);
+}
+
+.nav h1{
+    cursor:default;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav ul {
+    list-style-type: none;
+    display:flex;
+}
+.nav ul li{
+    margin-right:15px;
+    cursor:pointer;
+}
+.movies {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 50px;
+    padding: 100px;
+    width: 100%;
+    /* padding-top: 70px; */
+}
+
+@media screen and (max-width: 1090px) {
+    .movies {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
