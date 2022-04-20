@@ -27,13 +27,13 @@
     width: 100%;
     height:80%;
     margin:0;
-    padding:30px;
+    padding:15px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .movie_image{
-    min-height:90%;
-    max-height:90%;
+    min-height:80%;
+    max-height:80%;
 }
 
 .movie_box{
@@ -49,16 +49,35 @@
     display:flex;
     
 }
+.movie_box a{
+    color: white;
+}
 
 .back_home{
     position:absolute;
     top:0;
     left:10px;
 }
+
 .back_home a{
     color:white;
     opacity: 0.8;
     text-decoration: none;
     font-weight:600;
+}
+
+@media screen and (max-width: 998px) {
+    .movie_box h1, 
+    .movie_box h2, 
+    .movie_box h3, 
+    .movie_box ul li{
+        font-size : 11px;
+    }
+
+    .movie_box{
+        width:100%;
+        padding:15px;
+        color:white;
+    }
 }
 

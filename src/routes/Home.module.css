@@ -16,7 +16,7 @@
     display: grid;
 }
 .nav {
-    padding: 0 50px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +26,9 @@
     right: 0;
     z-index: 10;
     transition: .4s ease;
-    /* background: rgb(221,177,65);
+    background: rgb(221,177,65);
     background: linear-gradient(90deg, rgba(221,177,65,1) 0%, rgba(226,123,71,1) 49%, rgba(249,119,167,1) 100%);
-    */
+
 }
 
 .nav h1{
@@ -52,9 +52,22 @@
     /* padding-top: 70px; */
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 998px) {
     .movies {
+        display: grid;
+        padding: 70px 20px;
+        grid-gap: 20px;
         grid-template-columns: 1fr;
         width: 100%;
+        /* padding-top: 70px; */
     }
+    .nav h1{
+        font-size : 12px;
+    }
+    .nav ul li{
+        margin-right:10px;
+        cursor:pointer;
+        font-size : 10px;
+    }
+    
 }

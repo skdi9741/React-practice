@@ -10,8 +10,10 @@ const mEnter = (event) => {
 const mLeave = (event) => {
     let ele = event.target.closest("div");
     ele.style.transform = "scale(1.0)";
-    
 };
+const minuteToHour = (runtime) => {
+    return Math.round(runtime / 60) + "시간 " + Math.round(runtime % 60) + "분";
+}
 
 function Movie({id, coverImg, title, year, runtime, summary, genres}){
     return (
@@ -24,8 +26,8 @@ function Movie({id, coverImg, title, year, runtime, summary, genres}){
                 <h2 className={styles.movie__title}>
                 <Link to={`/movie/${id}`}>{title}</Link>
                 </h2>
-                <h3 className={styles.movie__year}>개봉일 : {year}</h3>
-                <h3 className={styles.movie__runtime}>{Math.round(runtime / 60)} 시간 {Math.round(runtime % 60)} 분 </h3>
+                <h3 className={styles.movie__year}>{year}</h3>
+                <h3 className={styles.movie__runtime}>{(typeof runtime === 'undefined' || runtime === 0) ? null : minuteToHour(runtime)}</h3>
                 <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
                 
                 <ul className={styles.movie__genres}>

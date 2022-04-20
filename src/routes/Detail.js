@@ -33,6 +33,7 @@ function Detail(){
                     </ul>
                     <h2>★ {detail.rating}</h2>
                     <h3>{Math.round(detail.runtime / 60)}h {detail.runtime % 60}m ({detail.runtime} min)</h3>
+                    <h3> websites : <a href={detail.url}>{detail.url}</a></h3>
 
                 </div>
             </div>
